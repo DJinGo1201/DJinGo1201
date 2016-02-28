@@ -1,0 +1,17 @@
+extend ../admin-layout 
+
+block content
+  .content
+    .row    
+      h3 #{title}
+      form#add
+        .form-group
+          input.add-category(type='radio', id='#{category[0].categoryId}', checked='checked')
+        .form-group
+          label.title(for='categoryname') 分类标签
+          input#categoryname.form-control.msg(type='text', name='categoryName', placeholder='分类标签',value='#{category[0].categoryName}') 
+        .form-group
+          label.title(for='categorydescribe') 分类描述
+          textarea#categorydescribe.form-control.msg(name='describe', placeholder='分类描述', rows='10') #{category[0].describe}
+        a#canel.btn.btn-default(href='/category/list', role='button') 取消
+        button#save-category.btn.btn-success(type='button', disabled='disabled') 保存

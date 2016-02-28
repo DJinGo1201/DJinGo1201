@@ -1,0 +1,19 @@
+extend ../admin-layout
+
+block content
+  .content
+      .path
+        a(href='/admin') 首页
+        i.fa.fa-angle-right
+        a(href='/newslist/#{news.categoryId}') #{news.categoryName}
+        i.fa.fa-angle-right
+        a(href='/news/details/#{news.newsId}') #{news.newsTitle}
+      .row
+        h1 #{news.newsTitle}
+        .image
+          img(src='#{news.newsImages}', alt='#{news.newsTitle}')
+        .infor
+          span 来源:#{news.newsSource}
+          span 发布时间:#{news.date}
+        .newscontent
+          p #{news.newsContent}

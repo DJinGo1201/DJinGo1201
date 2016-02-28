@@ -1,0 +1,50 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    title 百度新闻-后台管理系统
+    include ./include/stylesheets
+  body
+    header
+      .logo
+      .banner
+        .user
+          .portrait
+          .username
+            span #{username}
+              i.fa.fa-angle-down
+          ul.user-list
+            li
+              a(href='/logout')
+                i.fa.fa-power-off
+                | 退出登陆
+    .body
+      .aside
+        ul.nav-list
+          li.index
+            a(href='/admin')
+              i.fa.fa-home
+              | 首页
+          li.category-handle
+            a
+              i.fa.fa-sitemap
+              | 分类
+            ul.handle-list
+              li
+                a(href='/category/list')
+                  i.fa.fa-list-ul
+                  | 分类列表
+              li
+                a(href='/category/add')
+                  i.fa.fa-plus
+                  | 添加分类
+          li.add-content
+            a(href='/news/all')
+              i.fa.fa-file-text
+              | 全部内容
+          li.search
+            a(href='/search')
+              i.fa.fa-search
+              | 搜索 
+      block content
+    include ./include/script

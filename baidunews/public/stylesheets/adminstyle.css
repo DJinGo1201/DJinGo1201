@@ -1,0 +1,269 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Microsoft Yahe";
+}
+
+body,
+html {
+    height: 100%;
+    min-width: 800px;
+}
+
+header {
+    display: flex;
+}
+
+.logo {
+    background: #3598db url('../images/bg-news-logo_344ce44.png') 50% 50% no-repeat;
+    background-size: 135px;
+    height: 80px;
+    width: 250px;
+}
+
+.banner {
+    -webkit-flex: 1;
+    flex: 1;
+    height: 80px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f5f5f5;
+    box-shadow: 1px 1px 5px #f5f5f5;
+    background: #fff;
+}
+
+.body {
+    background: #F1F2F7;
+    min-height: 100%;
+    display: flex;
+}
+
+.aside {
+    width: 250px;
+    background: #293949;
+    min-height: 100%;
+}
+
+.nav-list li {
+    padding: 18px 25px;
+    font-size: 20px;
+    color: #AEB2B7;
+    cursor: pointer;
+}
+
+.nav-list a:hover {
+    color: #3598db;
+}
+
+.nav-list a {
+    color: #AEB2B7;
+    text-decoration: none;
+}
+
+.nav-list i {
+    margin-right: 8px;
+}
+
+.handle-list {
+    list-style: none;
+    background: #23313F;
+    width: 250px;
+    margin-left: -25px;
+    margin-top: 18px;
+    display: none;
+}
+
+.handle-list li {
+    font-size: 16px;
+}
+
+.content {
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+.row {
+    margin: 0;
+    padding: 10px;
+}
+
+.category {
+    display: block;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    color: #fff !important;
+    font-size: 30px;
+    border-radius: 3px;
+    text-decoration: none !important;
+    background: url(../images/folder.png) 50% 50% no-repeat;
+}
+
+.path {
+    padding: 0 10px;
+    height: 30px;
+    background: #fff;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+table {
+    margin-top: 10px;
+}
+
+.btn-xs {
+    margin: 0 3px;
+}
+
+.fa-angle-right {
+    margin: 0 5px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.radio-inline {
+    padding: 0;
+}
+
+input:checked+label {
+    background: #3E98F0;
+    color: #fff;
+}
+
+.radio-inline {
+    color: #3E98F0;
+    width: 50px;
+    line-height: 25px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #f5f5f5;
+    box-shadow: 1px 1px 5px #f5f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    background: #fff;
+}
+
+textarea {
+    resize: none;
+}
+
+#save-category,
+#save-news,
+#canel {
+    float: right;
+    margin-right: 10px;
+}
+
+h1,.image,.infor{
+    text-align: center;
+    margin:15px 0;
+}
+
+.infor span{
+    color: #777;
+    margin: 0 20px;
+    font-size: 13px;
+}
+
+.newscontent{
+    text-indent: 32px;
+}
+
+.search-wrap{
+    width: 580px;
+    height: 40px;
+    margin: 20px auto;
+}
+
+.search-text{
+    float: left;
+    height: 40px;
+    width: 500px;
+    font-size: 18px;
+    padding: 0 5px;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    border-right: none;
+    box-sizing:border-box;
+}
+
+#search-bt{
+    float: left;
+    width: 80px;
+    height: 40px;
+    background: #3E98F0;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border:none;
+}
+
+.user{
+    margin: 20px;
+    float: right;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.user:hover .user-list{
+    display: block;
+}
+
+.portrait{
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url(../images/default.gif) 50% 50% no-repeat;
+    background-size: 40px 40px;
+}
+
+.username{
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    font-size: 20px;
+    color: #A9A7A7;
+}
+
+.fa-angle-down{
+    vertical-align: middle;
+    margin-left: 3px;
+}
+
+.user-list{
+    display: none;
+    list-style: none;
+    background: #F6F6F6;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 115px;
+    height: 30px;
+    box-shadow: 1px 1px 5px #BBBBBB;
+}
+
+.user-list:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 8px solid transparent;
+    border-bottom-color: #F6F6F6;
+    position: absolute;
+    top: -16px;
+    right: 32px;
+}
+
+.user-list li{
+    padding: 0 5px;
+    line-height: 30px;
+}
+
+.fa-power-off{
+    margin-right: 5px;
+}

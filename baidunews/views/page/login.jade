@@ -1,0 +1,22 @@
+extend ../user-layout
+
+block content
+	.window
+		h1.text-center.text-uppercase
+			i.fa.fa-newspaper-o
+		form#login
+			.form-group.username
+				label(for='username') 用户名
+				.input-group
+					.input-group-addon
+						i.fa.fa-user
+					input#username.form-control(type='text',name='username',placeholder='username')
+			.form-group.password
+				label(for='password') 密码
+				.input-group
+					.input-group-addon
+						i.fa.fa-lock
+					input#password.form-control(type='password',name='password',placeholder='password')
+			.bt.text-center
+				a.btn.btn-success.btn-lg(href='/signup') Sign up
+				button.btn.btn-primary.btn-lg(id='login-bt') Log in

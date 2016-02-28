@@ -1,0 +1,23 @@
+extend ../admin-layout
+
+block content
+  .content
+    .row
+      a.btn.btn-info(href='/category/add', role='button') 添加分类
+      table.table.table-hover.table-striped.table-bordered
+        thead
+          tr
+            th 分类名称
+            th 分类描述
+            th 添加时间
+            th 操作
+          tbody
+            each item in categoryList
+              tr(id="#{item.categoryId}")
+                td #{item.categoryName}
+                td #{item.describe}
+                td #{item.date}
+                td
+                  a.btn.btn-primary.btn-xs(href='/newslist/#{item.categoryId}',role='button') 查看
+                  a.btn.btn-default.btn-xs(href='/category/edit/#{item.categoryId}', role='button') 编辑
+                  button.btn.btn-danger.btn-xs.category-delete 删除

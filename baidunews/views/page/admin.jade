@@ -1,0 +1,8 @@
+extend ../admin-layout
+
+block content
+  .content
+    .row
+      each item in category
+        .col-xs-6.col-sm-4.col-md-3.col-lg-3
+          a.category(href="/newslist/#{item.categoryId}") #{item.categoryName}

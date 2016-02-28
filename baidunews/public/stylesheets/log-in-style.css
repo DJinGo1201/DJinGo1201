@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../images/bg.jpg);
+}
+
+.window {
+    width: 400px;
+    height: 450px;
+    background: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -225px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.btn-lg {
+    width: 100px;
+    margin: 10px 20px;
+}
+
+.fa-newspaper-o,
+.fa-group {
+    font-size: 100px;
+    color: #fff;
+}
+
+.warn{
+	color: #ff0000;
+	margin: 5px 0;
+}
+
+.form-group{
+	height: 85px;
+	margin: 0;
+}

@@ -1,0 +1,36 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 百度新闻
+    link(rel='stylesheet', type='text/css', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/font-awesome.min.css')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/indexstyle.css')
+  body
+    header.header
+      .tool-left
+        a.to-bd(href='')
+        .user
+      .tool-right
+        .search
+        .subscibe
+    nav.nav
+      .divider
+      ul.nav-wrap
+        each item in category
+          li(id='#{item.categoryId}')
+            span.underline #{item.categoryName}
+            span.erect |
+    .content
+    .loading
+      i.fa.fa-spinner.fa-spin.fa-4x
+    button#loadmore.loadmore
+      i.fa.fa-spinner.fa-spin
+      span.loadtext 点击加载更多
+    script(type='text/javascript', src='/javascripts/jquery-1.11.3.min.js')
+    script(type='text/javascript', src='/javascripts/jquery.mobile.custom.min.js')
+    script(type='text/javascript', src='/javascripts/moment-with-locales.min.js')
+    script(type='text/javascript', src='/javascripts/index.js')
+
+

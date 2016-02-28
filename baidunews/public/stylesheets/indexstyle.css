@@ -1,0 +1,173 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Microsoft Yahe";
+}
+
+.header {
+    height: 44px;
+    background: #3E98F0 url(../images/bg-news-logo_344ce44.png) 50% 6px no-repeat;
+    background-size: 77px;
+}
+
+.tool-left {
+    float: left;
+    height: 44px;
+}
+
+.tool-right {
+    float: right;
+    height: 44px;
+}
+
+.to-bd,
+.user,
+.search,
+.subscibe {
+    float: left;
+    display: inline-block;
+    width: 34px;
+    height: 44px;
+    margin-right: 10px;
+    background: url(../images/bg-new-toolbar_6e9bc53.png) no-repeat;
+    background-size: 40px 500px;
+}
+
+.to-bd {
+    background-position: 50% 4px;
+}
+
+.user {
+    background-position: 50% -463px;
+}
+
+.search {
+    background-position: 50% -162px;
+}
+
+.subscibe {
+    background-position: 50% -107px;
+    margin-right: 0px;
+}
+
+.divider {
+    margin: 0 10px;
+    height: 1px;
+    background: #5DABF0;
+}
+
+.nav {
+    background: #3E98F0;
+}
+
+.nav-wrap {
+    list-style: none;
+}
+
+.nav-wrap:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.nav-wrap li {
+    float: left;
+    width: 20%;
+    height: 33px;
+    text-align: center;
+    color: #fff;
+    line-height: 33px;
+    font-size: 1.6rem;
+}
+
+.erect {
+    float: right;
+    color: #5DABF0;
+    font-size: 1.4rem;
+}
+
+.row {
+    margin: 0 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #F6F6F6;
+}
+
+.image {
+    width: 95px;
+    height: 68px;
+    float: left;
+    margin-right: 10px;
+}
+
+.title {
+    height: 50px;
+}
+
+.title p {
+    height: 40px;
+    overflow: hidden;
+}
+
+.date {
+    color: #B8BAC0;
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+
+.src {
+    font-size: 1.2rem;
+    float: right;
+    background: #0DA5FC;
+    color: #fff;
+    padding: 0 3px;
+    line-height: 20px;
+    border-radius: 2px;
+}
+
+.loadmore {
+    margin: 14px auto;
+    width: 80%;
+    height: 36px;
+    border: 1px solid #ebedef;
+    border-radius: 1px;
+    background: #f8f9fa;
+    text-align: center;
+    line-height: 36px;
+    font-size: 1.6rem;
+    color: #545454;
+    outline: none;
+    display: none;
+}
+
+.underline {
+    padding: 3px 0;
+}
+
+.active {
+    border-bottom: 1px solid #fff;
+}
+
+.content {
+    position: relative;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -24.5px;
+    margin-top: -28.5px;
+    color: #3E98F0;
+    display: none;
+}
+
+.fa-spin{
+    margin-right: 5px;
+    display: none;
+}

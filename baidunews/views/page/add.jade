@@ -1,0 +1,31 @@
+extend ../admin-layout
+
+block content
+  .content
+      .row
+        h3 #{title}
+        form#add
+          .form-gruop
+            input(type='hidden', name='newsid', value="#{news[0].newsId}",data-checked="#{news[0].categoryId}")
+          .form-group
+            label 新闻标签
+            br
+            each item in category
+              input(value="#{item.categoryName}",id="#{item.categoryId}",name="categoryName",type="radio")
+              label.radio-inline(for="#{item.categoryId}") #{item.categoryName}
+          .form-group
+            label(for='newstitle') 新闻标题
+            input#newstitle.form-control.msg(type='text', name='newstitle', 
+            placeholder='新闻标题',value="#{news[0].newsTitle}")
+          .form-group
+            label(for='newsimages') 图片URL
+            input#newsimages.form-control.msg(type='text', name='newsimages', placeholder='图片URL',value="#{news[0].newsImages}")
+          .form-group
+            label(for='newssource') 新闻来源
+            input#newssource.form-control.msg(type='text', name='newssource', placeholder='新闻来源',value="#{news[0].newsSource}")
+          .form-group
+            label(for='newscontent') 新闻内容
+            textarea#newscontent.form-control.msg(name='newscontent', placeholder='新闻内容', rows='10',wrap='hard') #{news[0].newsContent}
+          a#canel.btn.btn-default(href='/admin', role='button') 取消
+          button#save-news.btn.btn-success(type='button',disabled='disabled') 保存
+   

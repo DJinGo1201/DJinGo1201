@@ -1,0 +1,17 @@
+extend ../admin-layout
+
+block content
+  .content
+      .search-wrap
+        input.search-text(type='text')
+        button#search-bt 搜索
+      .row
+        table.table.table-hover.table-striped.table-bordered
+          thead
+            tr
+              th 新闻标题
+              th 新闻来源
+              th 分类
+              th 发布时间
+              th 操作
+          tbody

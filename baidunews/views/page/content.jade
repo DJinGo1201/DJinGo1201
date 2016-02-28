@@ -1,0 +1,29 @@
+extend ../admin-layout
+
+block content
+    .content
+      .path
+        a(href='/admin') 首页
+        i.fa.fa-angle-right
+        a(href='/newslist/#{category[0].categoryId}') #{category[0].categoryName}
+      .row
+        a.btn.btn-info(href='/news/add', role='button') 添加内容
+        table.table.table-hover.table-striped.table-bordered
+          thead
+            tr
+              th 新闻标题
+              th 新闻来源
+              th 分类
+              th 发布时间
+              th 操作
+          tbody
+            each item in newsList
+              tr(id="#{item.newsId}")
+                td #{item.newsTitle}
+                td #{item.newsSource}
+                td #{item.categoryName}
+                td #{item.date}
+                td
+                  a.btn.btn-primary.btn-xs(href='/news/details/#{item.newsId}', role='button') 查看
+                  a.btn.btn-default.btn-xs(href='/news/edit/#{item.newsId}', role='button') 编辑
+                  button.btn.btn-danger.btn-xs.news-delete 删除
