@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>fullpage</title>
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="sections">
+            <div class="section" style="background: #4390EE">
+                <h1>page1</h1>
+            </div>
+            <div class="section" style="background: #CA4040">
+                <h1>page2</h1>
+            </div>
+            <div class="section" style="background: #FF8604">
+                <h1>page3</h1>
+            </div>
+            <div class="section" style="background: #49A430">
+                <h1>page4</h1>
+            </div>
+        </div>
+        <div class="pages"></div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src='js/fullpage.js'></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+            $('#container').FullPage();
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#container,
+.sections,
+.section {
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    position: relative;
+}
+
+.section {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 40px;
+    color: #fff;
+}
+
+.pagination-bullet {
+    list-style: none;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #c7c7c7;
+    border-radius: 50%;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+
+.pagination-horizontal {
+    position: absolute;
+    width: 100%;
+    bottom: 15px;
+    text-align: center;
+}
+
+.pagination-vertical {
+    position: absolute;
+    width: 20px;
+    height: 100%;
+    top: 50%;
+    right: 15px;
+}
+
+.active {
+    background: #fff;
+}
