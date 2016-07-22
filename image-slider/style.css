@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    overflow: hidden;
+}
+
+body {
+    background: #333;
+    overflow: hidden;
+}
+
+#container {
+    overflow: hidden;
+}
+
+.imgbox li {
+	position: absolute;
+    display: -webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+}

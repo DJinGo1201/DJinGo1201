@@ -1,0 +1,13 @@
+{
+  "name": "reader",
+  "version": "1.0.0",
+  "description": "开启本地服务器",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-watch": "^1.0.0",
+    "load-grunt-tasks": "^3.5.0"
+  }
+}
